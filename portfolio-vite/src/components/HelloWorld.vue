@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue'
+import '../styles/components/index.scss'
 
 defineProps({
   msg: String
