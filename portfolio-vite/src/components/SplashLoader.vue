@@ -1,7 +1,9 @@
 <template>
-  <Transition>
-    <div class="splash-loader-wrapper" v-if="isVisible">
-      <div class="splash-loader"></div>
+  <Transition name="swipe-up">
+    <div class="splash-loader-wrapper" v-if="isWrapperVisible">
+      <Transition name="fade">
+        <div class="splash-loader" v-if="isLoaderVisible"></div>
+      </Transition>
     </div>
   </Transition>
 </template>
@@ -13,20 +15,25 @@ export default {
   name: 'splash-loader',
   data() {
     return {
-      isVisible: true
+      isWrapperVisible: false,
+      isLoaderVisible: false
     }
   },
   methods: {
     hideSplashLoader() {
       window.onload = (event) => {
       setTimeout(() => {
-        
-        this.isVisible = false
+        this.isLoaderVisible = false
       }, 2000)
+      setTimeout(() => {
+        this.isWrapperVisible = false
+      }, 3000)
     };
     }
   },
-  mounted () {
+  mounted() {
+    this.isWrapperVisible = true
+    this.isLoaderVisible = true
     this.hideSplashLoader()
   }
 } 
