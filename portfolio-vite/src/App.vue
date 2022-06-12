@@ -1,9 +1,9 @@
 <template>
   <splash-loader></splash-loader>
+  <router-view></router-view>
 </template>
 
 <script>
-// components
 import SplashLoader from './components/SplashLoader.vue'
 
 export default {
