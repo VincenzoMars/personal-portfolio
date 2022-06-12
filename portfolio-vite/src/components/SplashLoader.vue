@@ -24,10 +24,10 @@ export default {
       window.onload = (event) => {
       setTimeout(() => {
         this.isLoaderVisible = false
-      }, 2000)
+      }, 3000)
       setTimeout(() => {
         this.isWrapperVisible = false
-      }, 3000)
+      }, 100000)
     };
     }
   },

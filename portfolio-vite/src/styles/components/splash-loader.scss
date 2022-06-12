@@ -1,5 +1,4 @@
 .splash-loader-wrapper {
-    background-color: orange;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,6 +14,7 @@
         width: 100px;
         aspect-ratio: 1;
         background-color: red;
-        animation: splashLoader 1.5s linear infinite;
+        border-radius: 50%;
+        animation: splashLoader 1.5s ease-in-out infinite;
     }
 }
