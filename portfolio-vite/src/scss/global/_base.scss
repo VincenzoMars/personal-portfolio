@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+#app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: $color-orange-1;
+}
+
+p {
+    color: $color-orange-2;
+}
