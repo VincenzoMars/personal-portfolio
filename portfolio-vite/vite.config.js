@@ -7,11 +7,11 @@ export default defineConfig({
     preprocessorOptions: {
       scss: {
         additionalData: `
-          @import "./src/styles/_variables.scss";
-          @import "./src/styles/_utilities.scss";
-          @import "./src/styles/_animations.scss";
-          @import "./src/styles/_transitions.scss";
-          @import "./src/styles/_base.scss";
+          @import "./src/scss/global/_variables.scss";
+          @import "./src/scss/global/_utilities.scss";
+          @import "./src/scss/global/_animations.scss";
+          @import "./src/scss/global/_transitions.scss";
+          @import "./src/scss/global/_base.scss";
         `
       }
     }
