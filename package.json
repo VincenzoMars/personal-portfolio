@@ -15,7 +15,7 @@
     "@vitejs/plugin-vue": "^2.3.3",
     "node-sass": "^7.0.1",
     "sass": "^1.52.3",
-    "sass-loader": "^13.0.0",
+    "sass-loader": "^13.0.2",
     "vite": "^2.9.9",
     "vue-router": "^4.0.13"
   }
