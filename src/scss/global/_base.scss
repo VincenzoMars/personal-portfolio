@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    font-family: 'Poppins';
 }
 
 #app {
@@ -10,9 +11,9 @@
 }
 
 h1,h2,h3,h4,h5,h6 {
-    color: $color-orange-1;
+    color: $color-complementary;
 }
 
 p {
-    color: $color-orange-2;
+    color: $color-complementary;
 }
